@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="jquery-csv.js"></script>
+	
+	<script src="https://code.jscharting.com/latest/jscharting.js"></script> 
+	<script src="./script.js"></script>
+</head>
+
+<style>
+	.wrapper{
+    	margin: auto;
+    	text-align: center;
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: center;
+    	align-items: center;
+	}
+	div{
+		margin: 15px;
+	}
+</style>
+
+<body onload="">
+	<div class="wrapper">
+	<form>
+		<input id="fileInput" type="file"  accept=".csv"/> <br> <br>
+		<input id="submit" type="submit" value="Write"/> <br> <br>
+	</form>
+		<div id='title'></div>  
+		<div id="preview" ></div> 
+		<div id="table1"></div>
+		<div id="hu"></div> 
+	</div>
+	<div id="chartDiv" style="max-width: 740px;height: 400px;margin: 0px auto"></div>
+</body>
+</html>
