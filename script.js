@@ -17,10 +17,9 @@ $(document).ready(function(){
         
             //Getting the string of the cvs file
             let cvs = event.target.result;
-            //Parsing the cvs file into an array of objects
             
+            //Parsing the cvs file into an array of objects
             let data = $.csv.toArrays(cvs);
-            console.log(data);
      
             document.getElementById('preview').appendChild(tableMatrix(data));
 
